@@ -1,16 +1,15 @@
 (function(exports) {
-    var text = [];
-
-    function NotesList(input) {
-        text.push(input);
+    function NotesList(note = Note) {
+        this.list = [];
+        this.note = note;
     }
 
     function returnNoteList() {
-        return text;
+        return this.list;
     }
 
-    function takeNotes() {
-        text.push(returnNote);
+    function takeNote(input) {
+        this.list.push(new this.note(input));
     }
 
     exports.returnNoteList = returnNoteList;
