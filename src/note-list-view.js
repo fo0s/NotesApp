@@ -13,10 +13,10 @@
       noteyMcNoteFace += "<li><div>" + notesList.list[i].text + "</div></li>";
     }
     noteyMcNoteFace += "</ul>";
-  };
+  }
     return noteyMcNoteFace;
   };
 
-};
+}
   exports.NotesListView = NotesListView;
 })(this);
